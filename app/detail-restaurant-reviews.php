@@ -1,60 +1,6 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Meat | Angular 2</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="assets/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="assets/css/skins/_all-skins.min.css">
-
-  <link rel="stylesheet" href="assets/css/meat.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-<body class="hold-transition skin-red layout-top-nav">
-<div class="wrapper">
-
-  <header class="main-header">
-    <nav class="navbar navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand"><b>Meat</b></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="main-restaurants.html">Restaurantes <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-  </header>
+<?php 
+include ('head.php'); 
+?>
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
@@ -79,7 +25,7 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                   <div class="col-sm-3 col-xs-12">
-                    <img class="box-img-detail" src="assets/img/restaurants/breadbakery.png" />
+                    <img class="box-img-detail" src="../assets/img/restaurants/breadbakery.png" />
                   </div>
 
                   <dl class="col-sm-9 col-xs-12">
@@ -93,10 +39,10 @@
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer detail-footer">
-                <a class="pull-left" href="detail-restaurant.html">
+                <a class="pull-left" href="detail-restaurant.php">
                    Menu
                 </a>
-                <a class="pull-right detail-active" href="detail-restaurant-reviews.html">
+                <a class="pull-right detail-active" href="detail-restaurant-reviews.php">
                    Avaliações
                 </a>
               </div>
@@ -114,7 +60,7 @@
               <div class="box-header with-border">
                 <span class="review-score pull-right"><i class="fa fa-star"></i> 4.5</span>
                 <div class="user-block">
-                  <img alt="User Image" class="img-circle" src="assets/img/reactions/loved.png">
+                  <img alt="User Image" class="img-circle" src="../assets/img/reactions/loved.png">
                   <span class="username">Julia</span>
                   <span class="description">23/01/2017</span>
                 </div>
@@ -132,7 +78,7 @@
               <div class="box-header with-border">
                 <span class="review-score pull-right"><i class="fa fa-star"></i> 3</span>
                 <div class="user-block">
-                  <img alt="User Image" class="img-circle" src="assets/img/reactions/soso.png">
+                  <img alt="User Image" class="img-circle" src="../assets/img/reactions/soso.png">
 
                   <span class="username">Aline</span>
                   <span class="description">12/12/2016</span>
@@ -152,7 +98,7 @@
                 <span class="review-score pull-right"><i class="fa fa-star"></i> 2</span>
                 <div class="user-block">
 
-                  <img alt="User Image" class="img-circle" src="assets/img/reactions/pissed.png">
+                  <img alt="User Image" class="img-circle" src="../assets/img/reactions/pissed.png">
                   <span class="username">Renata</span>
                   <span class="description">12/12/2016</span>
                 </div>
@@ -170,7 +116,7 @@
               <div class="box-header with-border">
                 <span class="review-score pull-right"><i class="fa fa-star"></i> 5</span>
                 <div class="user-block">
-                  <img alt="User Image" class="img-circle" src="assets/img/reactions/loved.png">
+                  <img alt="User Image" class="img-circle" src="../assets/img/reactions/loved.png">
                   <span class="username">Renata</span>
                   <span class="description">12/12/2016</span>
                 </div>
@@ -192,30 +138,8 @@
     <!-- /.container -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="pull-right hidden-xs">
-        <b>Version</b> 2.3.7
-      </div>
-      <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-      reserved.
-    </div>
-    <!-- /.container -->
-  </footer>
-</div>
-<!-- ./wrapper -->
-
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="assets/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="assets/js/demo.js"></script>
+  <?php 
+  include ('footer.php'); 
+  ?>
 </body>
 </html>
